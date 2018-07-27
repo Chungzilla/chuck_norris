@@ -25,9 +25,10 @@ if input[0] == 'random'
 end
 
 #If user enters a number
-user_joke_number = chomp.gets.to_i
-if input[0] == user_joke_number
-    
+id = gets.chomp.to_i
+
+if input[0] == id
+    chuck_book.get_choke_by_id(user_joke_number)
 end
     
 

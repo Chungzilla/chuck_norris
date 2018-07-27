@@ -17,8 +17,9 @@ class ChuckJokes
     end
   
     def get_joke_by_id(id)
-        
-  
+        id_joke = ChuckNorris::JokeFinder.find_joke(id)
+        puts id_joke.joke.colorize(:white).on_black
+        `say "#{id_joke.joke}"`
     end
   
     def replace_name(name)
