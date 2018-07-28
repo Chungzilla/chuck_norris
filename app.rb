@@ -25,7 +25,8 @@ if input[0] == 'random'
 end
 
 #If user enters a number
-if input[0].is_an_integer?
+input[0].to_i
+
     id = input[0].to_i
     chuck_book.get_joke_by_id(id)
 end
